@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { use, useState } from "react";
 import { Heart, MessageCircle, Minus, Plus, Star } from "lucide-react";
 import { getProductBySlug, products } from "@/data/products";
 import { formatRupiah, whatsappNumber } from "@/lib/utils";
@@ -10,8 +10,9 @@ import { useShopStore } from "@/store/use-shop-store";
 import { Button } from "@/components/ui/button";
 import { Dialog } from "@/components/ui/dialog";
 
-export default function ProductDetailPage({ params }: { params: { slug: string } }) {
-  const productMaybe = getProductBySlug(params.slug);
+export default function ProductDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = use(params);
+  const productMaybe = getProductBySlug(slug);
   const [image, setImage] = useState(productMaybe?.images[0] ?? "");
   const [color, setColor] = useState(productMaybe?.colors[0] ?? "");
   const [size, setSize] = useState(productMaybe?.sizes[0] ?? "");
