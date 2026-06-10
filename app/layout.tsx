@@ -4,8 +4,8 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
 export const metadata: Metadata = {
-  title: "UrbanWear - Premium T-Shirts for Everyday Movement",
-  description: "Modern fashion ecommerce demo for premium t-shirts, apparel, and custom orders.",
+  title: "BANDIT - Premium T-Shirts for Everyday Movement",
+  description: "Black and gold apparel store for premium t-shirts, custom orders, and daily outfits.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

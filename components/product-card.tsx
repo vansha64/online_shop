@@ -42,7 +42,7 @@ export function ProductCard({ product }: { product: Product }) {
           ))}
         </div>
         <button className="absolute right-3 top-3 rounded-full bg-black/50 p-2 backdrop-blur" onClick={() => toggleWishlist(product.id)} aria-label="Toggle wishlist">
-          <Heart className={isWishlisted ? "fill-emerald-300 text-emerald-300" : ""} size={18} />
+          <Heart className={isWishlisted ? "fill-[#d6ad55] text-[#d6ad55]" : ""} size={18} />
         </button>
         <button className="absolute inset-x-4 bottom-4 flex translate-y-3 items-center justify-center gap-2 rounded-full bg-zinc-950/80 px-4 py-3 text-sm font-bold opacity-0 backdrop-blur transition group-hover:translate-y-0 group-hover:opacity-100" onClick={() => setQuick(true)}>
           <Eye size={16} /> Quick view
@@ -51,7 +51,7 @@ export function ProductCard({ product }: { product: Product }) {
       <div className="grid gap-3 p-4">
         <div className="flex items-start justify-between gap-3">
           <div>
-            <Link href={`/products/${product.slug}`} className="font-black hover:text-emerald-300">
+            <Link href={`/products/${product.slug}`} className="font-black hover:text-[#d6ad55]">
               {product.name}
             </Link>
             <p className="text-sm text-zinc-400">{product.category} · {product.material}</p>
@@ -59,7 +59,7 @@ export function ProductCard({ product }: { product: Product }) {
           <strong>{formatRupiah.format(product.price)}</strong>
         </div>
         <div className="flex items-center gap-1 text-sm text-zinc-300">
-          <Star className="fill-lime-300 text-lime-300" size={15} /> {product.rating} ({product.reviewCount})
+          <Star className="fill-[#d6ad55] text-[#d6ad55]" size={15} /> {product.rating} ({product.reviewCount})
         </div>
         <div className="flex gap-2">
           {product.colors.slice(0, 5).map((item) => (
@@ -88,7 +88,7 @@ function QuickView({ product, open, onOpenChange }: { product: Product; open: bo
         </div>
         <div className="grid gap-5 p-6">
           <div>
-            <p className="text-sm font-black uppercase text-emerald-300">{product.category}</p>
+            <p className="text-sm font-black uppercase text-[#d6ad55]">{product.category}</p>
             <h2 className="text-4xl font-black">{product.name}</h2>
             <p className="mt-3 text-zinc-400">{product.description}</p>
           </div>
@@ -97,7 +97,7 @@ function QuickView({ product, open, onOpenChange }: { product: Product; open: bo
             <span className="font-bold">Color</span>
             <div className="flex flex-wrap gap-2">
               {product.colors.map((item) => (
-                <button className={`rounded-full border px-4 py-2 text-sm ${color === item ? "border-emerald-300 bg-emerald-300 text-zinc-950" : "border-white/10 bg-white/5"}`} key={item} onClick={() => setColor(item)}>
+                <button className={`rounded-full border px-4 py-2 text-sm ${color === item ? "border-[#d6ad55] bg-[#b98a2f] text-zinc-950" : "border-white/10 bg-white/5"}`} key={item} onClick={() => setColor(item)}>
                   {item}
                 </button>
               ))}
@@ -107,7 +107,7 @@ function QuickView({ product, open, onOpenChange }: { product: Product; open: bo
             <span className="font-bold">Size</span>
             <div className="flex flex-wrap gap-2">
               {product.sizes.map((item) => (
-                <button className={`rounded-full border px-4 py-2 text-sm ${size === item ? "border-emerald-300 bg-emerald-300 text-zinc-950" : "border-white/10 bg-white/5"}`} key={item} onClick={() => setSize(item)}>
+                <button className={`rounded-full border px-4 py-2 text-sm ${size === item ? "border-[#d6ad55] bg-[#b98a2f] text-zinc-950" : "border-white/10 bg-white/5"}`} key={item} onClick={() => setSize(item)}>
                   {item}
                 </button>
               ))}

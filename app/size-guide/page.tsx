@@ -12,7 +12,7 @@ const rows = [
 export default function SizeGuidePage() {
   return (
     <main className="section-shell">
-      <p className="text-sm font-black uppercase text-emerald-300">Size guide</p>
+      <p className="text-sm font-black uppercase text-[#d6ad55]">Size guide</p>
       <h1 className="mb-8 text-5xl font-black sm:text-7xl">Find your best fit.</h1>
       <div className="overflow-hidden rounded-3xl border border-white/10">
         <table className="w-full min-w-[720px] text-left">

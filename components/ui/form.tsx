@@ -6,7 +6,7 @@ export function Input(props: React.InputHTMLAttributes<HTMLInputElement>) {
     <input
       {...props}
       className={cn(
-        "h-11 rounded-2xl border border-white/10 bg-zinc-950/70 px-4 text-sm text-zinc-50 outline-none transition focus:border-emerald-300",
+        "h-11 rounded-2xl border border-white/10 bg-zinc-950/70 px-4 text-sm text-zinc-50 outline-none transition focus:border-[#d6ad55]",
         props.className,
       )}
     />
@@ -18,7 +18,7 @@ export function Textarea(props: React.TextareaHTMLAttributes<HTMLTextAreaElement
     <textarea
       {...props}
       className={cn(
-        "min-h-28 rounded-2xl border border-white/10 bg-zinc-950/70 px-4 py-3 text-sm text-zinc-50 outline-none transition focus:border-emerald-300",
+        "min-h-28 rounded-2xl border border-white/10 bg-zinc-950/70 px-4 py-3 text-sm text-zinc-50 outline-none transition focus:border-[#d6ad55]",
         props.className,
       )}
     />
@@ -30,7 +30,7 @@ export function Select(props: React.SelectHTMLAttributes<HTMLSelectElement>) {
     <select
       {...props}
       className={cn(
-        "h-11 rounded-2xl border border-white/10 bg-zinc-950/70 px-4 text-sm text-zinc-50 outline-none transition focus:border-emerald-300",
+        "h-11 rounded-2xl border border-white/10 bg-zinc-950/70 px-4 text-sm text-zinc-50 outline-none transition focus:border-[#d6ad55]",
         props.className,
       )}
     />

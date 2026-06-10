@@ -22,12 +22,12 @@ export default function CustomPage() {
     reader.readAsDataURL(file);
   }
 
-  const message = encodeURIComponent(`Halo UrbanWear, saya ingin custom order:\nType: ${type}\nColor: ${color}\nPrint: ${position}\nText: ${text}\nEstimated price: ${formatRupiah.format(price)}`);
+  const message = encodeURIComponent(`Halo BANDIT, saya ingin custom order:\nType: ${type}\nColor: ${color}\nPrint: ${position}\nText: ${text}\nEstimated price: ${formatRupiah.format(price)}`);
 
   return (
     <main className="section-shell">
       <div className="mb-8">
-        <p className="text-sm font-black uppercase text-emerald-300">Custom studio</p>
+        <p className="text-sm font-black uppercase text-[#d6ad55]">Custom studio</p>
         <h1 className="text-5xl font-black sm:text-7xl">Design your own tee.</h1>
       </div>
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
@@ -53,7 +53,7 @@ export default function CustomPage() {
             <span className="text-zinc-400">Estimated price</span>
             <strong className="block text-3xl">{formatRupiah.format(price)}</strong>
           </div>
-          <a className="inline-flex h-12 items-center justify-center rounded-full bg-emerald-300 font-black text-zinc-950" href={`https://wa.me/${whatsappNumber}?text=${message}`} target="_blank">Send custom order via WhatsApp</a>
+          <a className="inline-flex h-12 items-center justify-center rounded-full bg-[#b98a2f] font-black text-zinc-950" href={`https://wa.me/${whatsappNumber}?text=${message}`} target="_blank">Send custom order via WhatsApp</a>
         </section>
         <section className="grid place-items-center rounded-[2rem] border border-white/10 bg-white/[0.06] p-8">
           <div className="relative grid h-[520px] w-full max-w-md place-items-center rounded-[3rem]" style={{ background: color }}>

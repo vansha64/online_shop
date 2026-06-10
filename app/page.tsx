@@ -15,18 +15,26 @@ export default function HomePage() {
     <main>
       <section className="section-shell grid items-center gap-10 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="fade-up">
-          <p className="mb-4 text-sm font-black uppercase text-emerald-300">Premium T-Shirts for Everyday Movement</p>
-          <h1 className="text-5xl font-black leading-[0.95] sm:text-7xl lg:text-8xl">Urban essentials for clean everyday fits.</h1>
-          <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-400">UrbanWear menghadirkan kaos premium, oversize staples, hoodie essentials, dan custom tee untuk brand, komunitas, dan daily outfit.</p>
+          <div className="mb-5 flex items-center gap-4">
+            <span className="relative h-16 w-16 overflow-hidden rounded-xl border border-[#d6ad55]/45 bg-black shadow-xl shadow-black/50">
+              <Image src="/bandit-logo.jpg" alt="BANDIT logo" fill priority sizes="64px" className="object-contain" />
+            </span>
+            <div>
+              <p className="text-xs font-black uppercase text-[#d6ad55]">Premium T-Shirts for Everyday Movement</p>
+              <strong className="block text-2xl tracking-[0.2em] text-[#d6ad55]">BANDIT</strong>
+            </div>
+          </div>
+          <h1 className="text-5xl font-black leading-[0.95] sm:text-7xl lg:text-8xl">BANDIT black gold essentials.</h1>
+          <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-400">BANDIT menghadirkan kaos premium, oversize staples, hoodie essentials, dan custom tee untuk brand, komunitas, dan daily outfit.</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/products" className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-emerald-300 px-5 font-bold text-zinc-950 transition hover:bg-lime-300">
+            <Link href="/products" className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#b98a2f] px-5 font-bold text-zinc-950 transition hover:bg-[#d6ad55]">
               Shop collection <ArrowRight size={18} />
             </Link>
             <Link className="inline-flex h-11 items-center justify-center rounded-full border border-white/10 px-5 font-bold hover:bg-white/10" href="/custom">Create custom tee</Link>
           </div>
         </div>
         <div className="relative min-h-[560px] overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl shadow-black/30">
-          <Image src="/product-stack-tees.png" alt="UrbanWear apparel hero" fill priority className="object-cover" />
+          <Image src="/product-stack-tees.png" alt="BANDIT apparel hero" fill priority className="object-contain" />
           <div className="absolute bottom-5 left-5 right-5 rounded-3xl border border-white/10 bg-black/60 p-5 backdrop-blur">
             <p className="text-sm text-zinc-400">Current drop</p>
             <strong className="text-2xl">Core Movement Series</strong>
@@ -43,15 +51,15 @@ export default function HomePage() {
       <section className="section-shell">
         <div className="mb-8 flex items-end justify-between gap-4">
           <div>
-            <p className="text-sm font-black uppercase text-emerald-300">Categories</p>
+            <p className="text-sm font-black uppercase text-[#d6ad55]">Categories</p>
             <h2 className="text-4xl font-black sm:text-6xl">Shop by style.</h2>
           </div>
-          <Link className="hidden font-bold text-emerald-300 sm:block" href="/products">View all</Link>
+          <Link className="hidden font-bold text-[#d6ad55] sm:block" href="/products">View all</Link>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {categories.map((category, index) => (
             <Link className="group rounded-3xl border border-white/10 bg-white/[0.06] p-5 transition hover:-translate-y-1 hover:bg-white/[0.09]" href={`/products?category=${encodeURIComponent(category)}`} key={category}>
-              {[Shirt, Sparkles, PackageCheck, Truck, Palette].map((Icon, iconIndex) => iconIndex === index && <Icon className="mb-10 text-emerald-300" key={category} />)}
+              {[Shirt, Sparkles, PackageCheck, Truck, Palette].map((Icon, iconIndex) => iconIndex === index && <Icon className="mb-10 text-[#d6ad55]" key={category} />)}
               <strong>{category}</strong>
               <p className="mt-2 text-sm text-zinc-400">Explore {category.toLowerCase()} collection</p>
             </Link>
@@ -65,13 +73,13 @@ export default function HomePage() {
       <section className="section-shell">
         <Card className="grid overflow-hidden lg:grid-cols-2">
           <div className="relative min-h-96">
-            <Image src="/fabric-detail.png" alt="Custom tee detail" fill className="object-cover" />
+            <Image src="/fabric-detail.png" alt="Custom tee detail" fill className="object-contain" />
           </div>
           <CardContent className="grid content-center gap-5 p-8">
-            <p className="text-sm font-black uppercase text-emerald-300">Custom studio</p>
+            <p className="text-sm font-black uppercase text-[#d6ad55]">Custom studio</p>
             <h2 className="text-4xl font-black sm:text-6xl">Buat kaos custom tanpa backend rumit.</h2>
             <p className="text-zinc-400">Upload desain, pilih posisi print, tambah teks, dan kirim brief langsung lewat WhatsApp.</p>
-            <Link href="/custom" className="inline-flex h-12 w-fit items-center rounded-full bg-emerald-300 px-6 font-black text-zinc-950">Start custom order</Link>
+            <Link href="/custom" className="inline-flex h-12 w-fit items-center rounded-full bg-[#b98a2f] px-6 font-black text-zinc-950">Start custom order</Link>
           </CardContent>
         </Card>
       </section>
@@ -84,7 +92,7 @@ export default function HomePage() {
         ].map(([Icon, title, copy]) => (
           <Card key={String(title)}>
             <CardContent className="p-6">
-              <Icon className="mb-10 text-emerald-300" />
+              <Icon className="mb-10 text-[#d6ad55]" />
               <strong className="text-xl">{String(title)}</strong>
               <p className="mt-3 text-zinc-400">{String(copy)}</p>
             </CardContent>
@@ -97,7 +105,7 @@ export default function HomePage() {
           {["Bahannya adem, cutting oversized-nya bagus.", "Custom tee untuk komunitas kami hasilnya clean.", "Checkout via WhatsApp praktis dan cepat."].map((text, index) => (
             <blockquote className="rounded-3xl border border-white/10 bg-white/[0.06] p-6" key={text}>
               <p className="text-zinc-300">{text}</p>
-              <cite className="mt-6 block not-italic text-emerald-300">Customer #{index + 1}</cite>
+              <cite className="mt-6 block not-italic text-[#d6ad55]">Customer #{index + 1}</cite>
             </blockquote>
           ))}
         </div>
@@ -121,7 +129,7 @@ function ProductSection({ title, subtitle, products }: { title: string; subtitle
   return (
     <section className="section-shell">
       <div className="mb-8">
-        <p className="text-sm font-black uppercase text-emerald-300">{subtitle}</p>
+        <p className="text-sm font-black uppercase text-[#d6ad55]">{subtitle}</p>
         <h2 className="text-4xl font-black sm:text-6xl">{title}</h2>
       </div>
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

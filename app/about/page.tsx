@@ -1,11 +1,11 @@
 export default function AboutPage() {
   return (
     <main className="section-shell">
-      <p className="text-sm font-black uppercase text-emerald-300">About UrbanWear</p>
+      <p className="text-sm font-black uppercase text-[#d6ad55]">About BANDIT</p>
       <h1 className="max-w-4xl text-5xl font-black sm:text-7xl">Premium blank apparel for daily movement and custom identity.</h1>
       <div className="mt-10 grid gap-5 md:grid-cols-2">
         {[
-          ["Brand story", "UrbanWear dibuat sebagai demo toko apparel modern yang terasa siap jual, dengan fokus pada t-shirt premium dan custom order."],
+          ["Brand story", "BANDIT dibuat sebagai demo toko apparel modern yang terasa siap jual, dengan fokus pada t-shirt premium dan custom order."],
           ["Mission", "Membantu brand, komunitas, dan pembeli harian mendapatkan apparel clean dengan proses order yang sederhana."],
           ["Material quality", "Dummy data menampilkan cotton combed, heavy cotton, pique cotton, dan fleece sebagai simulasi katalog."],
           ["Production process", "Alur produksi disimulasikan dari pemilihan produk, custom brief, quality check, hingga pengiriman."],

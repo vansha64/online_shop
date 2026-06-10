@@ -13,7 +13,7 @@ const looks = [
 export default function LookbookPage() {
   return (
     <main className="section-shell">
-      <p className="text-sm font-black uppercase text-emerald-300">Lookbook</p>
+      <p className="text-sm font-black uppercase text-[#d6ad55]">Lookbook</p>
       <h1 className="mb-8 text-5xl font-black sm:text-7xl">Outfit inspiration.</h1>
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {looks.map(([title, copy, href], index) => (
@@ -24,7 +24,7 @@ export default function LookbookPage() {
             <div className="p-5">
               <strong className="text-xl">{title}</strong>
               <p className="mt-2 text-zinc-400">{copy}</p>
-              <Link className="mt-4 inline-block font-bold text-emerald-300" href={href}>Shop related product</Link>
+              <Link className="mt-4 inline-block font-bold text-[#d6ad55]" href={href}>Shop related product</Link>
             </div>
           </article>
         ))}

@@ -18,7 +18,7 @@ export default function CartPage() {
       <main className="section-shell text-center">
         <h1 className="text-5xl font-black">Cart is empty.</h1>
         <p className="mt-3 text-zinc-400">Mulai pilih produk favorit kamu.</p>
-        <Link className="mt-6 inline-flex h-11 items-center rounded-full bg-emerald-300 px-5 font-black text-zinc-950" href="/products">Continue shopping</Link>
+        <Link className="mt-6 inline-flex h-11 items-center rounded-full bg-[#b98a2f] px-5 font-black text-zinc-950" href="/products">Continue shopping</Link>
       </main>
     );
   }
@@ -36,7 +36,7 @@ export default function CartPage() {
                   <Image src={item.image} alt={item.name} fill className="object-cover" />
                 </div>
                 <div>
-                  <Link className="font-black hover:text-emerald-300" href={`/products/${item.slug}`}>{item.name}</Link>
+                  <Link className="font-black hover:text-[#d6ad55]" href={`/products/${item.slug}`}>{item.name}</Link>
                   <p className="text-sm text-zinc-400">{item.selectedColor} · {item.selectedSize}</p>
                   <div className="mt-4 flex w-fit items-center gap-2 rounded-full border border-white/10 p-1">
                     <button className="p-2" onClick={() => updateQuantity(key, item.quantity - 1)}><Minus size={16} /></button>
@@ -61,7 +61,7 @@ export default function CartPage() {
           </div>
           <div className="grid gap-3">
             <Link className="inline-flex h-11 items-center justify-center rounded-full border border-white/10 font-bold" href="/products">Continue shopping</Link>
-            <Link className="inline-flex h-11 items-center justify-center rounded-full bg-emerald-300 font-black text-zinc-950" href="/checkout">Checkout</Link>
+            <Link className="inline-flex h-11 items-center justify-center rounded-full bg-[#b98a2f] font-black text-zinc-950" href="/checkout">Checkout</Link>
           </div>
         </aside>
       </div>

@@ -22,7 +22,7 @@ export default function CheckoutPage() {
 
     const items = cart.map((item, index) => `${index + 1}. ${item.name} - ${item.selectedColor} - ${item.selectedSize} - ${item.quantity} - ${formatRupiah.format(item.price * item.quantity)}`);
     const message = [
-      "Halo UrbanWear, saya ingin order:",
+      "Halo BANDIT, saya ingin order:",
       ...items,
       `Subtotal: ${formatRupiah.format(subtotal)}`,
       `Shipping: ${formatRupiah.format(shipping)}`,
@@ -42,7 +42,7 @@ export default function CheckoutPage() {
   return (
     <main className="section-shell">
       <h1 className="mb-8 text-5xl font-black">Checkout</h1>
-      {success && <div className="mb-5 rounded-2xl bg-emerald-300 p-4 font-bold text-zinc-950">Order message opened in WhatsApp.</div>}
+      {success && <div className="mb-5 rounded-2xl bg-[#b98a2f] p-4 font-bold text-zinc-950">Order message opened in WhatsApp.</div>}
       <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
         <form className="grid gap-4 rounded-3xl border border-white/10 bg-white/[0.06] p-5" onSubmit={submit}>
           <Input name="name" placeholder="Full name *" />

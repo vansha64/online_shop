@@ -37,7 +37,7 @@ export default function ProductsPage() {
   return (
     <main className="section-shell">
       <div className="mb-8">
-        <p className="text-sm font-black uppercase text-emerald-300">Product catalog</p>
+        <p className="text-sm font-black uppercase text-[#d6ad55]">Product catalog</p>
         <h1 className="text-5xl font-black sm:text-7xl">Find your next daily tee.</h1>
       </div>
       <div className="mb-8 grid gap-3 rounded-3xl border border-white/10 bg-white/[0.06] p-4 lg:grid-cols-[1.4fr_repeat(4,1fr)]">

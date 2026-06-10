@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Heart, Menu, Search, ShoppingBag, X } from "lucide-react";
@@ -23,8 +24,10 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-white/10 bg-zinc-950/75 backdrop-blur-2xl">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3 font-black">
-          <span className="grid h-10 w-10 place-items-center rounded-2xl bg-emerald-300 text-zinc-950">UW</span>
-          <span>UrbanWear</span>
+          <span className="relative h-12 w-12 overflow-hidden rounded-xl border border-[#d6ad55]/45 bg-black shadow-lg shadow-black/40">
+            <Image src="/bandit-logo.jpg" alt="BANDIT logo" fill sizes="48px" className="object-contain" />
+          </span>
+          <span className="text-lg tracking-[0.18em] text-[#d6ad55]">BANDIT</span>
         </Link>
         <nav className="hidden items-center gap-1 rounded-full border border-white/10 bg-white/5 p-1 md:flex">
           {nav.map(([href, label]) => (
@@ -39,11 +42,11 @@ export function SiteHeader() {
           </Link>
           <Link className="relative rounded-full p-3 transition hover:bg-white/10" href="/products?wishlist=1" aria-label="Wishlist">
             <Heart size={20} />
-            {wishlistCount > 0 && <span className="absolute -right-1 -top-1 grid h-5 w-5 place-items-center rounded-full bg-lime-300 text-xs font-black text-zinc-950">{wishlistCount}</span>}
+            {wishlistCount > 0 && <span className="absolute -right-1 -top-1 grid h-5 w-5 place-items-center rounded-full bg-[#d6ad55] text-xs font-black text-zinc-950">{wishlistCount}</span>}
           </Link>
           <Link className="relative rounded-full p-3 transition hover:bg-white/10" href="/cart" aria-label="Cart">
             <ShoppingBag size={20} />
-            {cartCount > 0 && <span className="absolute -right-1 -top-1 grid h-5 w-5 place-items-center rounded-full bg-emerald-300 text-xs font-black text-zinc-950">{cartCount}</span>}
+            {cartCount > 0 && <span className="absolute -right-1 -top-1 grid h-5 w-5 place-items-center rounded-full bg-[#b98a2f] text-xs font-black text-zinc-950">{cartCount}</span>}
           </Link>
           <button className="rounded-full p-3 md:hidden" onClick={() => setOpen(true)} aria-label="Open menu">
             <Menu size={22} />

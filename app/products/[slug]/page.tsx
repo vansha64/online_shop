@@ -25,7 +25,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
     return (
       <main className="section-shell">
         <h1 className="text-5xl font-black">Product not found.</h1>
-        <Link className="mt-6 inline-flex font-bold text-emerald-300" href="/products">Back to products</Link>
+        <Link className="mt-6 inline-flex font-bold text-[#d6ad55]" href="/products">Back to products</Link>
       </main>
     );
   }
@@ -36,7 +36,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
     addToCart({ productId: product.id, name: product.name, slug: product.slug, image: product.images[0], selectedColor: color, selectedSize: size, price: product.price, quantity });
   }
 
-  const waText = encodeURIComponent(`Halo UrbanWear, saya ingin order ${product.name} - ${color} - ${size} - Qty ${quantity}`);
+  const waText = encodeURIComponent(`Halo BANDIT, saya ingin order ${product.name} - ${color} - ${size} - Qty ${quantity}`);
 
   return (
     <main className="section-shell">
@@ -55,17 +55,17 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
         </div>
         <section className="grid content-start gap-6">
           <div>
-            <p className="text-sm font-black uppercase text-emerald-300">{product.category}</p>
+            <p className="text-sm font-black uppercase text-[#d6ad55]">{product.category}</p>
             <h1 className="text-5xl font-black sm:text-7xl">{product.name}</h1>
             <div className="mt-4 flex items-center gap-2 text-zinc-300">
-              <Star className="fill-lime-300 text-lime-300" /> {product.rating} · {product.reviewCount} reviews
+              <Star className="fill-[#d6ad55] text-[#d6ad55]" /> {product.rating} · {product.reviewCount} reviews
             </div>
           </div>
           <strong className="text-3xl">{formatRupiah.format(product.price)}</strong>
           <p className="text-lg leading-8 text-zinc-400">{product.description}</p>
           <Option title="Color" items={product.colors} value={color} onChange={setColor} />
           <Option title="Size" items={product.sizes} value={size} onChange={setSize} />
-          <button className="w-fit font-bold text-emerald-300" onClick={() => setSizeOpen(true)}>Open size chart</button>
+          <button className="w-fit font-bold text-[#d6ad55]" onClick={() => setSizeOpen(true)}>Open size chart</button>
           <div className="flex w-fit items-center gap-3 rounded-full border border-white/10 bg-white/5 p-2">
             <button className="rounded-full p-2 hover:bg-white/10" onClick={() => setQuantity(Math.max(1, quantity - 1))}><Minus size={16} /></button>
             <strong>{quantity}</strong>
@@ -74,7 +74,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
           <div className="grid gap-3 sm:grid-cols-2">
             <Button onClick={add}>Add to cart</Button>
             <Button variant="outline" onClick={() => toggleWishlist(product.id)}><Heart size={18} /> Wishlist</Button>
-            <a className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-green-500 px-5 font-black text-zinc-950 sm:col-span-2" href={`https://wa.me/${whatsappNumber}?text=${waText}`} target="_blank"><MessageCircle size={18} /> Buy via WhatsApp</a>
+            <a className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#b98a2f] px-5 font-black text-zinc-950 sm:col-span-2" href={`https://wa.me/${whatsappNumber}?text=${waText}`} target="_blank"><MessageCircle size={18} /> Buy via WhatsApp</a>
           </div>
           <div className="grid gap-2 rounded-3xl border border-white/10 bg-white/[0.06] p-5 text-zinc-300">
             <p><b>Material:</b> {product.material}</p>
@@ -113,7 +113,7 @@ function Option({ title, items, value, onChange }: { title: string; items: strin
       <strong>{title}</strong>
       <div className="flex flex-wrap gap-2">
         {items.map((item) => (
-          <button className={`rounded-full border px-4 py-2 text-sm font-bold ${value === item ? "border-emerald-300 bg-emerald-300 text-zinc-950" : "border-white/10 bg-white/5"}`} key={item} onClick={() => onChange(item)}>
+          <button className={`rounded-full border px-4 py-2 text-sm font-bold ${value === item ? "border-[#d6ad55] bg-[#b98a2f] text-zinc-950" : "border-white/10 bg-white/5"}`} key={item} onClick={() => onChange(item)}>
             {item}
           </button>
         ))}

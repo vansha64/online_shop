@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, MessageCircle, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,8 +10,10 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
           <div className="mb-4 flex items-center gap-3 font-black">
-            <span className="grid h-10 w-10 place-items-center rounded-2xl bg-emerald-300 text-zinc-950">UW</span>
-            UrbanWear
+            <span className="relative h-12 w-12 overflow-hidden rounded-xl border border-[#d6ad55]/45 bg-black shadow-lg shadow-black/40">
+              <Image src="/bandit-logo.jpg" alt="BANDIT logo" fill sizes="48px" className="object-contain" />
+            </span>
+            <span className="tracking-[0.18em] text-[#d6ad55]">BANDIT</span>
           </div>
           <p className="max-w-md text-zinc-400">Premium T-Shirts for Everyday Movement. Built for clean daily outfits, custom needs, and community drops.</p>
           <div className="mt-5 flex gap-3 text-zinc-300">
