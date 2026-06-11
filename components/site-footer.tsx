@@ -11,9 +11,9 @@ export function SiteFooter() {
         <div>
           <div className="mb-4 flex items-center gap-3 font-black">
             <span className="relative h-12 w-12 overflow-hidden rounded-xl border border-[#d6ad55]/45 bg-black shadow-lg shadow-black/40">
-              <Image src="/bandit-logo.jpg" alt="BANDIT logo" fill sizes="48px" className="object-contain" />
+              <Image src="/banditt-logo.png" alt="BANDITT logo" fill sizes="48px" className="object-contain" />
             </span>
-            <span className="tracking-[0.18em] text-[#d6ad55]">BANDIT</span>
+            <span className="tracking-[0.18em] text-[#d6ad55]">BANDITT</span>
           </div>
           <p className="max-w-md text-zinc-400">Premium T-Shirts for Everyday Movement. Built for clean daily outfits, custom needs, and community drops.</p>
           <div className="mt-5 flex gap-3 text-zinc-300">

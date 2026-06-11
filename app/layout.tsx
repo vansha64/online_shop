@@ -4,7 +4,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
 export const metadata: Metadata = {
-  title: "BANDIT - Premium T-Shirts for Everyday Movement",
+  title: "BANDITT - Premium T-Shirts for Everyday Movement",
   description: "Black and gold apparel store for premium t-shirts, custom orders, and daily outfits.",
 };
 

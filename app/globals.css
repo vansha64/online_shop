@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Syne:wght@600;700;800&display=swap");
 @import "tailwindcss";
 
 @source "../app/**/*.{ts,tsx}";
@@ -20,13 +20,13 @@ body {
     radial-gradient(circle at 86% 8%, rgba(214, 173, 85, 0.13), transparent 28%),
     linear-gradient(180deg, #020202, #10100f 42%, #050505);
   color: #f5f5f4;
-  font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  font-family: "Outfit", system-ui, sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Space Grotesk", "Plus Jakarta Sans", system-ui, sans-serif;
+  font-family: "Syne", "Outfit", system-ui, sans-serif;
 }
 
 ::selection {

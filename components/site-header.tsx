@@ -25,9 +25,9 @@ export function SiteHeader() {
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3 font-black">
           <span className="relative h-12 w-12 overflow-hidden rounded-xl border border-[#d6ad55]/45 bg-black shadow-lg shadow-black/40">
-            <Image src="/bandit-logo.jpg" alt="BANDIT logo" fill sizes="48px" className="object-contain" />
+            <Image src="/banditt-logo.png" alt="BANDITT logo" fill sizes="48px" className="object-contain" />
           </span>
-          <span className="text-lg tracking-[0.18em] text-[#d6ad55]">BANDIT</span>
+          <span className="text-lg tracking-[0.18em] text-[#d6ad55]">BANDITT</span>
         </Link>
         <nav className="hidden items-center gap-1 rounded-full border border-white/10 bg-white/5 p-1 md:flex">
           {nav.map(([href, label]) => (

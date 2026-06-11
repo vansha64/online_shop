@@ -36,7 +36,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ slug: 
     addToCart({ productId: product.id, name: product.name, slug: product.slug, image: product.images[0], selectedColor: color, selectedSize: size, price: product.price, quantity });
   }
 
-  const waText = encodeURIComponent(`Halo BANDIT, saya ingin order ${product.name} - ${color} - ${size} - Qty ${quantity}`);
+  const waText = encodeURIComponent(`Halo BANDITT, saya ingin order ${product.name} - ${color} - ${size} - Qty ${quantity}`);
 
   return (
     <main className="section-shell">

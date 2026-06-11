@@ -17,15 +17,15 @@ export default function HomePage() {
         <div className="fade-up">
           <div className="mb-5 flex items-center gap-4">
             <span className="relative h-16 w-16 overflow-hidden rounded-xl border border-[#d6ad55]/45 bg-black shadow-xl shadow-black/50">
-              <Image src="/bandit-logo.jpg" alt="BANDIT logo" fill priority sizes="64px" className="object-contain" />
+              <Image src="/banditt-logo.png" alt="BANDITT logo" fill priority sizes="64px" className="object-contain" />
             </span>
             <div>
               <p className="text-xs font-black uppercase text-[#d6ad55]">Premium T-Shirts for Everyday Movement</p>
-              <strong className="block text-2xl tracking-[0.2em] text-[#d6ad55]">BANDIT</strong>
+              <strong className="block text-2xl tracking-[0.2em] text-[#d6ad55]">BANDITT</strong>
             </div>
           </div>
-          <h1 className="text-5xl font-black leading-[0.95] sm:text-7xl lg:text-8xl">BANDIT black gold essentials.</h1>
-          <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-400">BANDIT menghadirkan kaos premium, oversize staples, hoodie essentials, dan custom tee untuk brand, komunitas, dan daily outfit.</p>
+          <h1 className="text-5xl font-black leading-[0.95] sm:text-7xl lg:text-8xl">BANDITT black gold essentials.</h1>
+          <p className="mt-6 max-w-xl text-lg leading-8 text-zinc-400">BANDITT menghadirkan kaos premium, oversize staples, hoodie essentials, dan custom tee untuk brand, komunitas, dan daily outfit.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/products" className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-[#b98a2f] px-5 font-bold text-zinc-950 transition hover:bg-[#d6ad55]">
               Shop collection <ArrowRight size={18} />
@@ -34,7 +34,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="relative min-h-[560px] overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] shadow-2xl shadow-black/30">
-          <Image src="/product-stack-tees.png" alt="BANDIT apparel hero" fill priority className="object-contain" />
+          <Image src="/product-stack-tees.png" alt="BANDITT apparel hero" fill priority className="object-contain" />
           <div className="absolute bottom-5 left-5 right-5 rounded-3xl border border-white/10 bg-black/60 p-5 backdrop-blur">
             <p className="text-sm text-zinc-400">Current drop</p>
             <strong className="text-2xl">Core Movement Series</strong>

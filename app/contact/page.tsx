@@ -7,7 +7,7 @@ export default function ContactPage() {
   return (
     <main className="section-shell">
       <p className="text-sm font-black uppercase text-[#d6ad55]">Contact</p>
-      <h1 className="mb-8 text-5xl font-black sm:text-7xl">Talk to BANDIT.</h1>
+      <h1 className="mb-8 text-5xl font-black sm:text-7xl">Talk to BANDITT.</h1>
       <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr]">
         <form className="grid gap-4 rounded-3xl border border-white/10 bg-white/[0.06] p-6">
           <Input placeholder="Full name" />

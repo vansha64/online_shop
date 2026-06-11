@@ -22,7 +22,7 @@ export default function CheckoutPage() {
 
     const items = cart.map((item, index) => `${index + 1}. ${item.name} - ${item.selectedColor} - ${item.selectedSize} - ${item.quantity} - ${formatRupiah.format(item.price * item.quantity)}`);
     const message = [
-      "Halo BANDIT, saya ingin order:",
+      "Halo BANDITT, saya ingin order:",
       ...items,
       `Subtotal: ${formatRupiah.format(subtotal)}`,
       `Shipping: ${formatRupiah.format(shipping)}`,

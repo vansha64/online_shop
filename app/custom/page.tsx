@@ -22,7 +22,7 @@ export default function CustomPage() {
     reader.readAsDataURL(file);
   }
 
-  const message = encodeURIComponent(`Halo BANDIT, saya ingin custom order:\nType: ${type}\nColor: ${color}\nPrint: ${position}\nText: ${text}\nEstimated price: ${formatRupiah.format(price)}`);
+  const message = encodeURIComponent(`Halo BANDITT, saya ingin custom order:\nType: ${type}\nColor: ${color}\nPrint: ${position}\nText: ${text}\nEstimated price: ${formatRupiah.format(price)}`);
 
   return (
     <main className="section-shell">
